@@ -1,0 +1,33 @@
+--> Desemvolveremos duas interfaces para utilizar o ChatGpt
+
+- Interface web
+
+- WhatsApp
+
+- Existe a OpenAI, a idéia é se utlizar de seus serviços a partir do meu Chat MS. Ele terá um Backend e um Frontend em Next.js. A comunicação do front será com o back, o back com o Chat MS via gRPC e o Chat Ms com o OpenAI. Também teremos o WhatsApp que se comunicará com Chat MC utilizando Twilio via HTTP
+
+--> Tecnologias:
+
+- Frontend: React.js, React Server components Tailwind CSS
+
+- Backend: Next.js
+
+- IA: GO com gRpc que utiliza serviço da OpenAI
+
+Prisma ORM e MySQL, Restm Server sent events, Nestjs
+
+--> Ferramentas e tecnologias
+* GO
+* OpenAI
+
+--> Problemas
+* Como há um limite de tokens, deve-se apagar mensganes atigas ou pouco significativas para não ultrapassar o limite. O problema é a perda de mensagens que poderiam ser relevantes
+
+--> Go
+* go mod tidy
+
+npx create-next-app --typescript
+
+npx prisma init
+
+npx prisma migrate dev
